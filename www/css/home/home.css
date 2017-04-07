@@ -1,0 +1,272 @@
+#home ion-header-bar{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  background-image: none;
+}
+.top-lunbo{
+  top: 44px;
+}
+#home ion-content{
+  overflow:scroll;
+
+}
+
+/*头滚动条*/
+#home .headerSlider .swiper-container {
+  height: 182px;
+  width: 100%;
+}
+
+#home .headerSlider .swiper-container img {
+  height: 100%;
+  width: 100%;
+}
+.rmtj{
+  margin: 2px;
+  width: 100%;
+}
+.rmtj img{
+  width: 100%;
+  height: auto;
+}
+#home .toutiao {
+  padding-top: 10px;
+  display: inline-block;
+  height: 42px;
+  width: 100%;
+  background-color: white;
+}
+
+#home .toutiao img {
+  height: 25px;
+  width: 25%;;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+#home .toutiao #toutiaoSlider {
+  display: inline-block;
+  height: 22px;
+  width: 70%;
+}
+.clear{
+  clear: both;
+}
+/*秒杀*/
+#home #centent{
+  margin:10px 5px;
+  background-color:#fff;
+  box-shadow:0 1px 1px #dcdcdc;
+}
+#home .centent-top{
+  height:32px;
+  overflow:hidden;
+}
+#home .centent-top span{
+  display:block;
+  width:16px;
+  height:20px;
+  margin:4px 4px 0 4px;
+  background-image:url(../../img/home/seckill-icon.png);
+  background-size:16px 20px;
+  float:left;
+}
+#home .centent-top h2{
+  float:left;
+  font-size:15px;
+  color:#f00;
+  line-height:30px;
+  margin-right:10px;
+  margin-top: 0px;
+}
+#home .centent-time span{
+  background-image:none;
+  margin:5px 1px;
+  width:5px;
+  color:#5d5d5d;
+  font-size:14px;
+  font-weight:700;
+  text-align:center;
+}
+#home .centent-top .time-text{
+  color:#fff;
+  font-size:16px;
+  width:15px;
+  font-weight:300;
+  background-color:#5d5d5d;
+}
+#home .centent-more{
+  float:right;
+  line-height:30px;
+  margin-right:5px;
+  font-size:14px;
+}
+#home .centent-bottom{
+  padding-top:7px;
+  overflow:hidden;
+}
+#home .centent-bottom li{
+  width:33.3%;
+  float:left;
+}
+
+#home .centent-bottom li img{
+  display:block;
+  border-right:1px solid #e6e6e6;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100%;
+}
+#home .centent-bottom li span{
+  display:block;
+  text-align:center;
+  font-size:14px;
+}
+#home .seckill-now{
+  color:#f15353;
+}
+#home .seckill-old{
+  text-decoration:line-through;
+}
+.price-detail{
+  background: #efefef;
+  padding: 4px 0;
+}
+.price-detail ul{
+    margin: 4px 0;
+}
+.price-detail li{
+    height: 37px;
+    line-height: 37px;
+    border-bottom: solid 1px #ccc;
+    font-size: 14px;
+    padding-left: 10px;
+    color: darkgray;
+    background: white; 
+}
+.price-detail li span{
+    display: inline-block;
+    height: 37px;
+}
+.gxsj{
+    background: white;
+    padding-left: 3%;
+    height: 37px;
+    line-height: 37px;
+}
+.gxsj i{
+    color: red;
+    font-size: 18px;
+    margin-right: 2px;
+    float: left;
+}
+.gxsj span{
+    color: #fc0c4a;
+}
+.info-red{
+    color: red;
+}
+.info-border{
+    border-bottom: solid 2px red;
+}
+.spxq{
+    padding: 5px;
+    background: #efefef;
+}
+.spxq li{
+    float: left;
+    width: 48%;
+    margin-top: 2px;
+    margin-right: 1%;
+    background: white;
+}
+.spxq li img{
+    width: 100%;
+    height: 187px;
+}
+.spxq li p{
+    color: darkgray;
+    font-size: 14px;
+}
+.spxq li div{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.spxq li div b{
+    color: red;
+    font-weight: normal;
+}
+.spxq li div>span{
+    float: right;
+    color: darkgray;
+    /*margin-right: 2%;*/
+}
+.spxq li div>span span{
+    float: right;
+    margin-left: 2px;
+}
+.spxq li div i{
+   color: darkgrey;
+   font-size: 16px;
+}
+.Load-more{
+    text-align: center;
+    margin-top: 10px;
+}
+.Load-more button{
+    display: inline-block;
+    width: 140px;
+    height: 25px;
+    background: white;
+    border-radius: 12px;
+    border: none;
+}
+.bqsy{
+    background: #353840;
+    text-align: center;
+    height: 80px;
+}
+.bqsy ul{
+    width: 60%;
+    height: 35px;
+    margin:5px auto 0 auto;
+    background: #3d4049; 
+}
+.bqsy li{
+    width: 33.3%;
+    float: left;
+    padding: 10px 8px;
+}
+.jrsx li{
+    width: 100%;
+    margin: 2px 0;
+}
+.jrsx img{
+    width: 100%;
+    height: auto;
+}
+.jrsx div b{
+    font-weight: normal;
+    color: darkgray;
+}
+.jrsx div span{
+    float: right;
+    color: red;
+}
+/*回到头部滚动条*/
+#home .back_top{
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  background: url("../../img/home/scroll-to-top-icon.png") no-repeat;
+  background-size: 35px 35px;
+  opacity: 0;
+  transition: all .3s ease 0s;
+  -webkit-transition: all .3s ease 0s;
+  z-index: 100;
+}

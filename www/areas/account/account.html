@@ -1,0 +1,45 @@
+<ion-view id="account" view-title="个人中心" hide-back-button="true" cache-view="false">
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">个人中心</h1>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <div class=".light-bg padding-top padding-bottom">
+      <label id="info" class=" item item-icon-right" ng-click="func_showAction()">
+        <img  id="touxiang" src="img/details/touxiang.jpg" >
+        <span>yk</span>
+        <i class="icon ion-ios-arrow-right"></i>
+      </label>
+    </div>
+    <div class="list">
+      <div class="item .light-bg padding-top item-icon-right" ng-click="func_barcode()">
+        <label>我的果币
+          <i class="icon ion-ios-arrow-right"></i>
+        </label>
+      </div>
+      <div class="item .light-bg padding-top item-icon-right" ng-click="func_sms()">
+        <label>我的果信
+          <i class="icon ion-ios-arrow-right"></i>
+        </label>
+      </div>
+      <div class="item .light-bg padding-top item-icon-right">
+        <label>京东商城
+          <i class="icon ion-ios-arrow-right"></i>
+        </label>
+      </div>
+      <div class="item .light-bg padding-top item-icon-right" ng-click="func_callPhone('88889999')">
+        <label>联系我们</label>
+        <i class="icon ion-ios-arrow-right"></i>
+      </div>
+      <div class="item .light-bg padding-top item-icon-right">
+        <label>关于米果</label>
+        <i class="icon ion-ios-arrow-right"></i>
+      </div>
+    </div>
+    <div class="padding-top">
+      <button class="button button-block button-assertive " ng-click="func_exitApp()">退出登录</button>
+    </div>
+  </ion-content>
+
+</ion-view>
+
+

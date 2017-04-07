@@ -1,0 +1,113 @@
+<ion-view id="home" view-title="米果特卖-精选淘宝天猫优惠折扣,全场9.9元包邮" cache-view="false">
+  <div class="bar bar-header bar-assertive">
+    <button class="button button-icon icon ion-ios-list-outline" ng-click="func_goHome()"></button>
+    <div class="h1 title">米果首页</div>
+    <button class="button button-icon icon ion-ios-paperplane-outline" ng-click="func_gocard()"></button>
+  </div>
+  <ion-content id="home-content" class="top-lunbo" scroll="false">
+    <!--头部滚动条-->
+    <div class="headerSlider">
+      <div id="headerSlider" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" ng-repeat="item in obj_headerSlideData">
+            <img alt="{{item.alt}}" ng-src="{{item.src}}" ng-click="func_godetail()">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="rmtj" ng-click="func_godetail()">
+      <img src="http://img.alicdn.com/imgextra/i2/62752115/TB2v0TgaYlmpuFjSZFlXXbdQXXa-62752115.jpg" alt="">
+    </div>
+
+    <!--头条-->
+    <div class="toutiao">
+      <img ng-src="img/home/home-toutiao.jpg">
+      <div id="toutiaoSlider" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">兰博丹尼 可爱零钱包</div>
+          <div class="swiper-slide">桂格即食燕麦片超值装1478g</div>
+          <div class="swiper-slide">维达 卫生纸 140g卷纸*10卷</div>
+        </div>
+      </div>
+    </div>
+    <!-- 秒杀 -->
+    <div id="centent">
+      <div class="centent-top">
+        <span></span>
+        <h2>掌上秒杀</h2>
+        <div class="centent-time">
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+        </div>
+        <div class="centent-more" ng-click="func_godetail()">
+            更多>
+        </div>
+      </div>
+      <ul class="centent-bottom">
+        <li ng-click="func_godetail()">
+          <img ng-src="http://img.alicdn.com/imgextra/i1/TB1RYOjOXXXXXXWaVXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg" alt="">
+          <span class="seckill-now">￥11.11</span>
+          <span class="seckill-old">￥39.00</span>
+        </li>
+        <li ng-click="func_godetail()">
+          <img ng-src="http://img.alicdn.com/imgextra/i3/2227715716/TB2rZncX4uI.eBjy0FdXXXgbVXa_!!2227715716.jpg_200x200.jpg" alt="">
+          <span class="seckill-now">￥69.00</span>
+          <span class="seckill-old">￥299.00</span>
+        </li>
+        <li ng-click="func_godetail()">
+          <img ng-src="http://img.alicdn.com/imgextra/i2/TB1I9PEQpXXXXb.XpXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg" alt="">
+          <span class="seckill-now">￥99.00</span>
+          <span class="seckill-old">￥199.00</span>
+        </li>
+      </ul>
+    </div>
+    <section class="price-detail">
+      <ul>
+        <li>
+          <span class="info-red info-border">精选商品</span>
+          </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="gxsj">
+        <i class="ion-ios-stopwatch-outline"></i>
+        <span>更新时间 : {{list.time}}</span>
+      </div>
+      <div class="clear"></div>
+    </section>
+     <ul class="spxq">
+        <li ng-repeat="l in lists track by $index" ng-click="func_gododetail()">
+          <img src="{{l.pic_url}}" alt="">
+          <p>{{l.title}}</p>
+          <div>
+            <b>￥ {{l.coupon_price}}</b>
+            <span>
+              <i class="ion-android-favorite-outline"></i>
+              <span>{{l.volume}}</span>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="Load-more">
+         <button  ng-click="loading()">点击加载更多>></button>
+      </div>
+      <footer class="bqsy">
+        <ul>
+          <li>电脑版</li>
+          <li>触屏版</li>
+          <li>客户端</li>
+          <div class="clear"></div>
+          <p>copyright©2011-2015 m.meguo.com</p>
+        </ul>
+      </footer>
+    <!--回到顶部的区块-->
+    <div class="back_top"></div>
+  </ion-content>
+</ion-view>

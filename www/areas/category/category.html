@@ -1,0 +1,47 @@
+<ion-view id="category" view-title="9块9包邮">
+  <div class="bar bar-header bar-assertive">
+    <button class="button button-icon icon ion-ios-arrow-left" ng-click="func_goBack()"></button>
+    <div class="h1 title" style="color: white;">9块9包邮</div>
+    <button class="button button-icon icon ion-ios-home-outline" ng-click="func_goHome()"></button>
+  </div>
+  <ion-content class="scroll-content  has-header top-content" scroll="false">
+    <nav id="nav">
+      <ul>
+        <li ng-class="$index==0?'nav-current':'nav-blur'" ng-repeat="item in categoryData"  ng-click="categoryLeftClick($event);getCategoryDetailData(item.typeNumber)">{{item.name}}</li>
+      </ul>
+    </nav>
+    <div id="pro">
+      <ion-content lazy-scroll>
+        <div class="pro-scroll">
+          <div class="pro-warp">
+            <div class="banner">
+              <img ng-src="img/category/banner_1.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="content-title">
+                <span>热卖品类</span>
+              </div>
+              <div class="content-body">
+                <li class="content-body-list" ng-repeat="item in categoryDetailData" ui-sref="goodsList({typeNumber:{{item.typeNumber}}})">
+                  <img image-lazy-src="{{item.src}}" alt="" image-lazy-loader="lines">
+                  <span>{{item.name}}</span>
+                </li>
+              </div>
+              <div class="content-title">
+                <span>冬季新品</span>
+              </div>
+              <div class="content-body">
+                <li class="content-body-list" ng-repeat="item in categoryDetailData">
+                  <img image-lazy-src="{{item.src}}" alt="" image-lazy-loader="lines">
+                  <span>{{item.name}}</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+
+    </div>
+  </ion-content>
+</ion-view>
+
